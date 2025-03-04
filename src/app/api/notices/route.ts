@@ -12,6 +12,7 @@ export async function GET() {
     const notices = JSON.parse(fileData);
     return NextResponse.json(notices);
   } catch (error) {
+    console.error('Error fetching notices:', error);
     return NextResponse.json({ error: 'Failed to fetch notices' }, { status: 500 });
   }
 }
@@ -45,7 +46,7 @@ export async function PUT(request: NextRequest) {
       return NextResponse.json({ error: 'Notice not found' }, { status: 404 });
     }
   } catch (error) {
-    console.error('Error updating notice:', error);
+    console.error('Error fetching notices:', error);
     return NextResponse.json({ error: 'Failed to update notice' }, { status: 500 });
   }
 }
