@@ -106,9 +106,11 @@ export default function NoticeBoard() {
           onClick={() => setSelectedNotice(notice)}
           className={`${notice.position} transform h-48 w-40 -translate-x-1/2 -translate-y-1/2 bg-white shadow-black rounded-md shadow-lg cursor-pointer transition-transform hover:scale-105 flex flex-col items-center p-2`}
         >
-          <img 
+          <Image
             src={notice.image} 
             alt={notice.text} 
+            width={200}
+            height={150}
             className="h-12 w-full object-cover rounded-md mb-1"
             onError={(e) => {
               e.currentTarget.src = "https://via.placeholder.com/200x150?text=Image+Error"
@@ -146,9 +148,11 @@ export default function NoticeBoard() {
               >
                 ✕
               </button>
-              <img 
+              <Image
                 src={selectedNotice.image} 
                 alt="Notice" 
+                height={300}
+                width={400}
                 className="rounded-md mb-4 w-full h-3/4 object-contain"
                 onError={(e) => {
                   e.currentTarget.src = "https://via.placeholder.com/400x300?text=Image+Error"

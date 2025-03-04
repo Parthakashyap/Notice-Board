@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const colorOptions = [
   { value: 'bg-red-400', label: 'Red' },
@@ -269,9 +270,11 @@ export default function AdminDashboard() {
                   <h3 className="text-lg font-medium mb-4">Preview</h3>
                   <div className="border border-gray-200 p-4 rounded-lg bg-white">
                     <div className="relative w-full h-48 mb-3 bg-gray-100 rounded-md overflow-hidden">
-                      <img 
+                      <Image 
                         src={editingNotice.image} 
                         alt="Notice Preview" 
+                        width={400}
+                        height={300}
                         className="w-full h-full object-cover"
                         onError={(e) => (e.currentTarget.src = "https://via.placeholder.com/400x300?text=Invalid+Image+URL")}
                       />
