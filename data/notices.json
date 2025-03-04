@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "position": "absolute top-50 left-24",
+    "color1": "bg-purple-400",
+    "color2": "bg-yellow-400",
+    "text": "Important notice",
+    "image": "https://www.mysecuritysign.com/img/lg/K/Notice-Vehicles-Search-Sign-K-8187.gif"
+  },
+  {
+    "id": 2,
+    "position": "absolute top-54 left-70",
+    "color1": "bg-red-400",
+    "color2": "bg-yellow-400",
+    "text": "Notice 2",
+    "image": "https://source.unsplash.com/200x150/?city"
+  },
+  {
+    "id": 3,
+    "position": "absolute bottom-50 left-32",
+    "color1": "bg-red-400",
+    "color2": "bg-blue-400",
+    "text": "hello world",
+    "image": "https://th.bing.com/th/id/OIP.j8yd8dJ5215WbgQ0NsLzuAHaNK?w=2592&h=4608&rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 4,
+    "position": "absolute bottom-54 -right-18",
+    "color1": "bg-yellow-400",
+    "color2": "bg-green-400",
+    "text": "Notice 4",
+    "image": "https://source.unsplash.com/200x150/?abstract"
+  },
+  {
+    "id": 5,
+    "position": "absolute -bottom-4 right-8 -rotate-1",
+    "color1": "bg-green-400",
+    "color2": "bg-red-400",
+    "text": "Notice 5",
+    "image": "https://source.unsplash.com/200x150/?architecture"
+  }
+]
