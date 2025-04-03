@@ -4,10 +4,12 @@ import Notice from '@/models/Notice';
 
 // Define the Notice type
 type Notice = {
-  id: string;
-  title: string;
-  content: string;
-  position?: number;
+  id: number;
+  position: string;
+  color1: string;
+  color2: string;
+  text: string;
+  image: string;
 };
 
 const ADMIN_KEY = "IIC_rgu%#19"; // Hard-coded admin key
@@ -26,7 +28,7 @@ export async function GET() {
 export async function PUT(request: NextRequest) {
   try {
     const data = await request.json();
-    const { updatedNotice, adminKey }: { updatedNotice: any; adminKey: string } = data;
+    const { updatedNotice, adminKey }: { updatedNotice: Notice; adminKey: string } = data;
 
     // Verify admin key
     if (adminKey !== ADMIN_KEY) {

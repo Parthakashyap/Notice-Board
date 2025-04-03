@@ -7,7 +7,7 @@ type MongooseCache = {
 };
 
 // Create a cached connection
-let cached: MongooseCache = {
+const cached: MongooseCache = {
   conn: null,
   promise: null,
 };

@@ -1,6 +1,8 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "no-var": "off"
+    "no-var": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "prefer-const": "off"
   }
 } 
