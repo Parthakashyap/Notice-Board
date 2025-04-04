@@ -98,6 +98,9 @@ export default function NoticeBoard() {
       <div className="h-screen">
         <Image src={background} alt="background" className="h-full w-full object-cover" />
       </div>
+      <Image src={rgu} alt='rgu logo' className="absolute rounded-md w-[30%] bg-white top-20 left-18 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 "/>
+      <Image src={iicrgu} alt='iic rgu logo' className="absolute rounded-md w-[32%] bg-white top-20 -right-12 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 "/>
+
 
       {/* Notice Cards */}
       {notices.map((notice) => (
@@ -122,9 +125,7 @@ export default function NoticeBoard() {
         </div>
       ))}
 
-      <Image src={rgu} alt='rgu logo' className="absolute rounded-md w-[30%] bg-white top-20 left-18 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 z-50"/>
-      <Image src={iicrgu} alt='iic rgu logo' className="absolute rounded-md w-[32%] bg-white top-20 -right-12 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 z-50"/>
-
+      
 
       {/* Modal with Animation */}
       <AnimatePresence>
