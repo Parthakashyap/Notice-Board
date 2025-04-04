@@ -1,3 +1,4 @@
+
 'use client'
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -47,6 +48,14 @@ export default function NoticeBoard() {
 
     fetchNotices();
   }, []);
+
+  // Handler for closing the modal when clicking outside
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // Only close if the click was directly on the backdrop, not on its children
+    if (e.target === e.currentTarget) {
+      setSelectedNotice(null);
+    }
+  };
 
   if (loading) {
     return (
@@ -135,6 +144,7 @@ export default function NoticeBoard() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            onClick={handleBackdropClick}
           >
             <motion.div 
               className="bg-white p-6 rounded-lg shadow-lg w-[90%] h-[80%] relative"
