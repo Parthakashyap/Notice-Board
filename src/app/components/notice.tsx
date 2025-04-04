@@ -104,7 +104,7 @@ export default function NoticeBoard() {
         <div
           key={notice.id}
           onClick={() => setSelectedNotice(notice)}
-          className={`${notice.position} transform h-48 w-40 -translate-x-1/2 -translate-y-1/2 bg-white shadow-black rounded-md shadow-lg cursor-pointer transition-transform hover:scale-105 flex flex-col items-center p-2`}
+          className={`${notice.position} transform h-48 w-40 -translate-x-1/2 -translate-y-1/2 bg-white shadow-black rounded-md shadow-lg cursor-pointer transition-transform hover:scale-105 flex flex-col items-center p-2 mt-4`}
         >
           <Image
             src={notice.image} 
@@ -122,8 +122,8 @@ export default function NoticeBoard() {
         </div>
       ))}
 
-      <Image src={rgu} alt='rgu logo' className="absolute rounded-md w-[30%] bg-white top-10 left-18 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 z-50"/>
-      <Image src={iicrgu} alt='iic rgu logo' className="absolute rounded-md w-[32%] bg-white top-10 -right-12 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 z-50"/>
+      <Image src={rgu} alt='rgu logo' className="absolute rounded-md w-[30%] bg-white top-20 left-18 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 z-50"/>
+      <Image src={iicrgu} alt='iic rgu logo' className="absolute rounded-md w-[32%] bg-white top-20 -right-12 border border-black shadow-md shadow-white transform -translate-x-1/2 -translate-y-1/2 z-50"/>
 
 
       {/* Modal with Animation */}
